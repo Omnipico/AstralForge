@@ -1,0 +1,22 @@
+name: AstralForge
+version: 0.0.1
+author: Allymonies
+main: com.omnipico.astralforge.AstralForge
+api-version: 1.16
+website: omnipico.com
+depend: [PicoItemLib]
+softdepend: [Stardust]
+commands:
+  astralforge:
+    description: AstralForge command
+    usage: /astralforge
+    permission: astralforge.astralforge
+permissions:
+  astralforge.astralforge:
+    default: true
+    description: Allows usage of /astralforge
+  astralforge.*:
+    default: op
+    description: Allows access to every AstralForge feature.
+    children:
+      astralforge.astralforge: true
